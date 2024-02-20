@@ -14,7 +14,7 @@ int main() {
     while(scanf("%c", &novo) != EOF){
         count = novo;
         carac_linha++;
-        // Criptogradia propriamente dita
+        // Criptografia propriamente dita (pode ser feita de diversas formas)
         switch(novo){
             case 10: linhas++; carac_linha=0; break;
             case 65 ... 90: count = (((count + carac_linha) *linhas) %26 ) + 65; novo = count; break;
